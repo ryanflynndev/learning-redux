@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 class NotesContainer extends React.Component {
 
     
@@ -34,8 +35,10 @@ class NotesContainer extends React.Component {
     }
 }
 
+const msp = (state) => {
+    return {notes: state.notes}
+}
 
 
 
-
-export default NotesContainer
+export default connect(msp)(NotesContainer)
