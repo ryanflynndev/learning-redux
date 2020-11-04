@@ -35,10 +35,10 @@ class NotesContainer extends React.Component {
     }
 }
 
-const msp = (state) => {
+const mapStateToProps = (state) => {
     return {notes: state.notes}
 }
 
 
 
-export default connect(msp)(NotesContainer)
+export default connect(mapStateToProps)(NotesContainer)
