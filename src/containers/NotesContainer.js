@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import Note from '../components/Note'
 class NotesContainer extends React.Component {
 
     
@@ -22,7 +23,7 @@ class NotesContainer extends React.Component {
             },
         ]
         return notes.map(note => {
-            return <li>{note.content}</li>
+            return <Note id={note.id} note={note}/>
         })
     }
 

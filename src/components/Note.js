@@ -7,7 +7,9 @@ class Note extends React.Component {
 
     render() {
         return(
-            null
+            <li>{this.props.note.content}</li>
         )
     }
 }
+
+export default Note
