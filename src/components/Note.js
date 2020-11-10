@@ -7,7 +7,10 @@ class Note extends React.Component {
 
     render() {
         return(
-            <li>{this.props.note.content}</li>
+            <div>
+                <li>{this.props.note.content}</li>
+            </div>
+            
         )
     }
 }
